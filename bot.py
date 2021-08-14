@@ -13,7 +13,7 @@ from _bot import bot
 # noinspection PyUnresolvedReferences
 from modules import *
 
-bot_admins = json.loads(environ.get('bot_admins', '[1753322423]'))
+bot_admins = json.loads(environ.get('bot_admins'))
 
 logger = telebot.logger
 telebot.logger.setLevel(logging.INFO)
@@ -76,10 +76,3 @@ def handle_exception(d: Union[Message, CallbackQuery], e):
         chat_id=d.from_user.id,
         parse_mode='HTML'
     )
-
-
-if __name__ == '__main__':
-    environ['http_proxy'] = 'http://127.0.0.1:7890'
-    environ['https_proxy'] = 'http://127.0.0.1:7890'
-
-    bot.polling(none_stop=True)

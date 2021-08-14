@@ -1,9 +1,7 @@
 {
   "BOT": {
     "NAME": "DigitalOcean 小助手",
-    "TOKEN": "1713484373:AAHGixhUMqwYlioXtR-thdG-ZYi0Tw_WpXk",
-    "ADMINS": [
-      1753322423
-    ]
+    "TOKEN": "",
+    "ADMINS": []
   }
 }

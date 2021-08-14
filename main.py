@@ -23,10 +23,5 @@ def start_bot():
 
 
 if __name__ == '__main__':
-    from os import environ
-
-    environ['http_proxy'] = 'http://127.0.0.1:7890'
-    environ['https_proxy'] = 'http://127.0.0.1:7890'
-
     parse_config()
     start_bot()
