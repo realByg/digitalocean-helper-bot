@@ -32,7 +32,7 @@ def start(d: Message):
         ),
     )
     t = f'欢迎使用 <b>{bot_name}</b>\n\n' \
-        '你可以管理 DigitalOcean 账号，创建实例，更换 IP 等\n\n' \
+        '你可以管理 DigitalOcean 账号，创建实例等\n\n' \
         '快捷命令：\n' \
         '/aa 添加账号  /ma 管理账号  /bta 批量测试账号\n' \
         '/cd 创建实例  /md 管理实例'
